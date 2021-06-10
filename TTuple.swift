@@ -33,7 +33,11 @@ init(currentState:Int, inputChar: Character, newState: Int, outputChar: Characte
  func nakedTuple()->String{
    var str = String(currentState) + String(inputChar) + String(newState) + String(outputChar)
   str = str.map { "\($0)" }.joined(separator: " ")
-  str += " \(direction)"
+  if direction == .right{
+    str += " r"
+  }else{
+    str += " l"
+  }
    return str
  }
    	//prints out TTuples without labels; “naked”
