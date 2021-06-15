@@ -4,7 +4,7 @@ enum Direction{
 }
 
 struct TTuple : CustomStringConvertible{  
- let currentState: Int  
+ var currentState: Int  
  let inputChar: Character  
  let newState: Int  
  let outputChar: Character  
