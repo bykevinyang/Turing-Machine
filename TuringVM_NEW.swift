@@ -1,4 +1,4 @@
-class TuringVM{
+class TuringVM_NEW{
 
   var numberSteps: Int
   let ttuplesArray: [TTuple]
@@ -80,3 +80,8 @@ func runTuring(initialTape: String, initialState: Int, initialHead: Int) -> (num
   return (numberSteps: numberSteps, finalTape: tapeAsString(tape), trace: trace)
 }
 }
+
+// What is TupleReport? Do I have to use it?
+// What is tapeAsString? Do I have to use it?
+// Do we have more example problems to test my code out?
+// Are we supposed to provide you with our answers for the excersises

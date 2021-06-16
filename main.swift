@@ -7,7 +7,7 @@ func simpleTuringRun(){
   
  let tuplesArray = readTuples(tuplesAsString: tupleString)  
  let tvm = TuringVM(ttuplesArray: tuplesArray)  
- let result = tvm.runTuring(initialTape: "_111000_", initialState: 0, initialHead: 0)    
+ let result = tvm.runTuring(initialTape: "_101010_", initialState: 0, initialHead: 0)    
  print("Tuples:")  
  print(tvm.nakedTupleReport())  
  print("Initial String: \"_111000_\" Initial State: 0 Initial Head Position: 0")  
@@ -15,6 +15,6 @@ func simpleTuringRun(){
  print("Number Steps In Run: \(result.numberSteps)")  
  print("Final Tape: \(result.finalTape)")  
  print("\nTrace:")  
- for line in result.trace{print("" + line)}  
+ for line in result.trace{print("" + line)} 
 }  
 simpleTuringRun()  
